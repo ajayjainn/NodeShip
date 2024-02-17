@@ -22,9 +22,11 @@ router.get('/',async (req,res)=>{
   }
 })
 
-router.patch('/:id',async (req,res)=>{
+router.post('/:id',async (req,res)=>{
   const id = req.params.id
   const status = req.body.status
+  
+  console.log(req.body)
   try{
     const order = await Order.findById(id)
     if(!order) throw new Error('Invalid id')

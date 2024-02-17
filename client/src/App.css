@@ -1,3 +1,4 @@
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -22,7 +23,7 @@
   from {
     transform: rotate(0deg);
   }
-  to {
+  to {a
     transform: rotate(360deg);
   }
 }
